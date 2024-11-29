@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fw-bold">
+
+
+
+<div class="   ">
+
+  <div class="heder text-center my-2 py-2">
+
+    <h1>CRUD</h1>
+    <h4>produuct management sysestem</h4>
+  </div>
+  <div class="inputs">
+    <input class="w-100 py-1 form-control" type="text" id="titile" placeholder="titile">
+    <div class="d-flex mt-2 ">
+      <input onkeyup="getTotal()"  class="form-control mb-1"  type="number" name="" id="price" placeholder="price">
+      <input onkeyup="getTotal()" class="form-control" type="number" name="" id="taxes" placeholder="taxes">
+      <input onkeyup="getTotal()" class="form-control" type="number" name="" id="ads" placeholder="ads">
+      <input onkeyup="getTotal()" class="form-control" type="number" name="" id="discount" placeholder="discount">
+<div class="total">
+  <h5 class="d-flex mx-2 align-items-center justify-content-center gap-2 fw-bold "> <small class="mx-2">total is :</small> <small  id="total"></small></h5>
+
+</div>
+    </div>
+    <input type="number" class="form-control my-1" name="" id="count" placeholder="count">
+    <input type="text" class="form-control my-1" name="" id="category" placeholder="category">
+    <button  id="create" class="form-control my-1 bg-primary">create</button>
+  </div>
+
+  <div class="outputs">
+    <input onkeyup="searchData(this.value)" class="w-100 py-1 form-control"  type="text" id="search" placeholder="search ">
+    <div class="btn-searsh">
+      <button onclick="getSearshMode(this.id) " id="sershTitile" class="form-control btn btn-primary">searsh py titile</button>
+      <button onclick="getSearshMode(this.id) " id="sershCategory" class="form-control btn btn-primary">searsh py category</button>
+    </div>
+    <div id="delateAll"></div>
+  </div>
+
+  
+<table class="table">
+
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>titil</th>
+      <th>price</th>
+      <th>taexes</th>
+      <th>ads</th>
+      <th>discount</th>
+      <th>total</th>
+      <th>cateagory</th>
+      <th>updade</th>
+      <th>delete</th>
+  </tr>
+  </thead>
+
+
+<tbody id="tbody">
+
+</tbody>
+
+
+</table>
+</div>
+
+</body>
+<script src="./js/js.js"></script>
+<script src="js/bootstrap.j"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</script>
+</html>
